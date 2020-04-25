@@ -18,9 +18,9 @@ Pas kesaj duhet qe file `.env.example` ti ndryshojme emrin ne `.env`. E hapim fi
 - `DB_USERNAME=root`
 - `DB_PASSWORD=root`
 
-Fusha `DB_DATABASE` permban emrin e databazes qe keni ne kompjuter.
-Fusha `DB_USERNAME` permban emrin e userit qe perdor aplikacioni per tu lidhur me databazen.
-Fusha `DB_PASSWORD` permban passwordin e userit qe perdor aplikacioni per tu lidhur me databazen.
+Fusha `DB_DATABASE` permban emrin e databazes qe keni ne kompjuter.  
+Fusha `DB_USERNAME` permban emrin e userit qe perdor aplikacioni per tu lidhur me databazen.  
+Fusha `DB_PASSWORD` permban passwordin e userit qe perdor aplikacioni per tu lidhur me databazen.  
 
 Pasi i kemi plotesur te gjitha fushat e ruajme kete file. Hapim command line ne folderin root te projektit dhe shkruajme komanden `php artisan key:generate`. Kjo komande do te shfaqe output ne command line nje celes qe do perdoret per enkriptim.
 
