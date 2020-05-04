@@ -46,3 +46,7 @@ Route::get('register', [ 'as' => 'register', 'uses' => 'Auth\RegisterController@
 Route::post('register', [ 'as' => '', 'uses' => 'Auth\RegisterController@register']);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('user/edit', 'UserController@editUser')->name('user.edit');
+Route::post('user/update', 'UserController@updateUser')->name('user.update');
