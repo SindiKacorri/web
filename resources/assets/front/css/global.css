@@ -1,0 +1,356 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	font-size: 100%;
+}
+
+/* ROOT FONT STYLES */
+
+* {
+	font-family: 'Lato', Helvetica, sans-serif;
+	color: #333447;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+}
+
+ul li {
+	list-style: none;
+}
+input:focus {
+	outline: none;
+}
+
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+
+.mg25 {
+	margin-top: 25px;
+}
+
+.f-w-normal {
+	font-weight: normal;
+}
+.mgtb50 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.mb0 {
+	margin-bottom: 0;
+}
+
+.mb35 {
+	margin-bottom: 35px;
+}
+
+.mb25 {
+	margin-bottom: 25px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt0 {
+	margin-top:0;
+}
+
+.pb25 {
+	padding-bottom: 25px;
+}
+
+.p25 {
+	padding-top: 25px;
+	padding-bottom: 25px
+}
+.p25.nb {
+	border-bottom: none!important;
+}
+
+.btn {
+	background: #fff;
+	border: 1px solid #737373;
+	padding: 5px 10px;
+}
+.meta.visible-xs {
+	display: none;
+	font-weight: 300;
+	color: #696969;
+	font-size: 17px;
+}
+
+.float-none {
+	float: none!important;
+}
+
+.w100 {
+	width: 100%;
+	float: left;
+}
+
+.w55 {
+	width: 55%;
+	float: left;
+}
+.w45 {
+	width: 45%;
+	float: left;
+}
+
+.w30 {
+	width: 30%;
+	float: left;
+}
+
+.w25 {
+	width: 25%;
+	float: left;
+}
+
+.w15 {
+	width: 15%;
+	float: left;
+}
+
+.flex-vertical {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.flex-only-vertical {
+	display: flex;
+	flex-direction: column;
+}
+
+.button-group {
+	display: inline-block;
+	position: relative;
+}
+
+button.btn.btn-favourite {
+	margin-right: 25px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 1px solid #323547;
+	transition: all .1s ease-out;
+}
+button.btn.btn-favourite:hover {
+	cursor: pointer;
+	background: #323547;
+	color: #fff;
+}
+
+button.btn.finish-order {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	transition: all .1s ease-out;
+	background: #323547;
+	font-weight: bold;
+	padding: 10px;
+}
+button.btn.finish-order:hover {
+	cursor: pointer;
+}
+
+/**
+ * INPUT
+ */
+.form-group {
+	position: relative;
+	display: block;
+	margin-bottom: 25px;
+}
+
+.form-group input {
+	display: block;
+	width: 100%;
+	border: none;
+	background: #F7F7F7;
+	padding: 10px 15px;
+	margin-top: 10px;
+}
+
+.form-group label {
+	text-transform: uppercase;
+	color: #9a9a9a;
+	letter-spacing: 1px;
+}
+
+.form-group textarea {
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+	background: #f7f7f7;
+	border: none;
+	resize: none;
+	padding: 15px 10px;
+}
+
+.form-group textarea:focus {
+	outline: none;
+}
+
+/* HELPER CLASSES */
+
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+button:focus {
+	outline: none;
+}
+.no-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* owl carousel custom */
+
+.owl-theme .owl-dots {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+}
+.owl-theme .owl-dots .owl-dot span {
+	width: 30px;
+	height: 4px;
+	border-radius: 3px;
+}
+.owl-theme .owl-dots .owl-dot span {
+	background: #fff8f86e;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+	background: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: #e8e8e8;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+	position: absolute;
+	left: -120px;
+	top: 40%;
+	padding: 9px 12px!important;
+	color: #D4C697;
+	border: none;
+	z-index: 2;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+	right: -120px;
+	left: auto;
+}
+
+.owl-theme .owl-nav .disabled {
+	opacity: .3;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+	background: transparent;
+}
+
+.owl-nav .slider-nav {
+	width: 50px;
+	height: 50px;
+	opacity: .5;
+}
+
+.owl-nav .slider-nav:hover {
+	opacity: .7;
+}
+/* TYPOGRAPHY */
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.375rem;
+}
+
+h4 {
+	font-size: 1.125rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.875rem;
+}
+
+p {
+	font-size: 1.125rem;
+	font-weight: 200;
+	line-height: 1.8;
+}
+
+.font-light {
+	font-weight: 300;
+}
+
+.font-regular {
+	font-weight: 400;
+}
+
+.font-heavy {
+	font-weight: 700;
+}
+
+/* POSITIONING */
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
