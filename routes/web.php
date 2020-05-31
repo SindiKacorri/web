@@ -50,3 +50,35 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('user/edit', 'UserController@editUser')->name('user.edit');
 Route::post('user/update', 'UserController@updateUser')->name('user.update');
+
+Route::group(['prefix' => 'admin'], function(){
+
+	Route::get('dashboard', 'ProductSettingsController@settings');
+	Route::get('product/create', 'ProductSettingsController@newProduct');
+
+	//orders
+	Route::get('orders/all', 'DashboardController@allOrders');
+	Route::get('order/{id}', ['uses' => 'DashboardController@viewOrder', 'as' => 'view.order']);
+	Route::get('confirm/order/{id}', ['uses' => 'DashboardController@confirmOrder', 'as' => 'confirm.order']);
+	Route::get('cancel/order/{id}', ['uses' => 'DashboardController@cancelOrder', 'as' => 'cancel.order']);
+
+	Route::post('product/create', 'DashboardController@newProduct');
+	Route::get('products/all', 'DashboardController@allProducts');
+	Route::get('product/edit/{id}', ['uses' => 'DashboardController@editProduct', 'as' => 'edit.product']);
+	Route::post('product/edit/{id}', ['uses' => 'DashboardController@updateProduct', 'as' => 'update.product']);
+	Route::post('product/image', 'DashboardController@productImage');
+
+	//product settings create
+	Route::post('category/create', 'ProductSettingsController@createCategory');
+	Route::post('skin-type/create', 'ProductSettingsController@createSkintype');
+	Route::post('color/create', 'ProductSettingsController@createColor');
+	Route::post('size/create', 'ProductSettingsController@createSize');
+	Route::post('material/create', 'ProductSettingsController@createMaterial');
+
+	//product settings delete
+	Route::post('category/{id}/delete', 'ProductSettingsController@deleteCategory');
+	Route::post('skin-type/{id}/delete', 'ProductSettingsController@deleteSkintype');
+	Route::post('color/{id}/delete', 'ProductSettingsController@deleteColor');
+	Route::post('size/{id}/delete', 'ProductSettingsController@deleteSize');
+	Route::post('material/{id}/delete', 'ProductSettingsController@deleteMaterial');
+});
