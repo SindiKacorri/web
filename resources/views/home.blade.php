@@ -152,7 +152,8 @@
 								<div class="item-description">
 									<h3 class="title">{{$item->title}}</h3>
 									<h5 class="description">{{(!empty($p->description)) ?? $p->description}}</h5>
-								<div class="price">EUR {{number_format($item->price)}}</div>
+
+								<div class="price">EUR {{number_format($item->sizes->first()->pivot->price)}}</div>
 								</div>
 							</a>
 						</div>
