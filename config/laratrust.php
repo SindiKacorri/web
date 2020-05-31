@@ -195,7 +195,7 @@ return [
                 'code' => 403
             ],
             'redirect' => [
-                'url' => '/admin/login',        // Change this to the route you need
+                'url' => '/login',        // Change this to the route you need
                 'message' => [                  // Key value message to be flashed into the session.
                     'key' => 'error',
                     'content' => 'Unauthorized' // If the content is empty nothing will be flashed to the session.

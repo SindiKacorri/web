@@ -29,7 +29,7 @@
 				<div class="menu-logo pull-left">
 					<a href="{{url('/')}}">
 						{{-- <img src="src/img/logo.png" alt="SET_LOGO_ALT"> --}}
-						<h3 style="margin-bottom:0;">JA</h3>
+						<h3 style="margin-bottom:0;">LOGO</h3>
 					</a>
 				</div>
 				<ul class="menu-list">
@@ -127,7 +127,7 @@
 						<div class="col-xs-12 col-md-4">
 							<h5>Na ndiqni në rrjetet sociale</h5>
 							<div class="social">
-								<a href="https://www.instagram.com/juliettearmand.al/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+								<a href="http://www.fshn.edu.al/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>

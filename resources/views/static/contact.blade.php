@@ -31,10 +31,10 @@
 													<p><i class="fa fa-map-marker"></i>Tek Rruga e Kavajes, Rruga Bodganeve, Pallati Eurocol, Kati 1 </p>
 												</div>
 												<div class="contact-row">
-													<p><i class="fa fa-phone-square"></i> +355 68 485 2818</p>
+													<p><i class="fa fa-phone-square"></i> +355 68 485 0000</p>
 												</div>
 												<div class="contact-row">
-													<p><i class="fa fa-envelope"></i> juliettearmand@gmail.com </p>
+													<p><i class="fa fa-envelope"></i> linje_estetike@gmail.com </p>
 												</div>
 										</div>
 									</div>
