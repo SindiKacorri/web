@@ -25,15 +25,6 @@ class HomeController extends Controller
 	*/
     protected $redirectTo = '/';
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
-     public function index()
-     {
-         return view('home');
-     }
 
 	public function home(){
 		$categories = Category::all();
@@ -257,7 +248,7 @@ class HomeController extends Controller
 		if(Auth::guard()->check()){
 			return redirect($this->redirectTo);
 		};
-		return view('auth.login');
+		return view('back.login');
 	}
 
 	/**
@@ -269,7 +260,6 @@ class HomeController extends Controller
 	public function postAdminLogin(Request $request)
 	{
 		$credentials = $request->only('email','password');
-		//$this->validate($request,Admin::$rules);
 		if (Auth::guard()->attempt($credentials)) {
 			return redirect()->intended('admin/dashboard');
 		}

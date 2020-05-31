@@ -10,11 +10,6 @@
 								<i class="fa fa-arrow-left" style="color:#000;"></i> <strong>Kthehu</strong>
 						</button>
 					</a>
-					<a href="#">
-						<button type="button" class="btn btn-md btn-default pull-right" style="margin-left: 5px;">
-								<i class="fa fa-print mr-5" style="color:#000;"></i> <strong>Printo faturen</strong>
-						</button>
-					</a>
 					@if($order->status_id != 2)
 						<a href="{{ route('confirm.order', $order->id) }}">
 							<button type="button" class="btn btn-md btn-success pull-right">

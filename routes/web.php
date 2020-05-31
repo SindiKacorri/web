@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@home');
 
 // Authentication Routes...
 Route::get('login', [
@@ -45,8 +43,8 @@ Route::get('register', [ 'as' => 'register', 'uses' => 'Auth\RegisterController@
 
 Route::post('register', [ 'as' => '', 'uses' => 'Auth\RegisterController@register']);
 
-Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('contact', 'HomeController@contactus');
+Route::get('about', 'HomeController@aboutus');
 
 Route::get('user/edit', 'UserController@editUser')->name('user.edit');
 Route::post('user/update', 'UserController@updateUser')->name('user.update');
@@ -60,9 +58,13 @@ Route::get('category/{name}', ['uses' => 'HomeController@viewCategory', 'as' => 
 Route::get('orders', 'HomeController@viewOrder');
 Route::post('order', 'HomeController@saveOrder');
 
-Route::get('checkout', 'HomeController@checkout')
+Route::get('checkout', 'HomeController@checkout');
 
-Route::group(['prefix' => 'admin'], function(){
+
+Route::get('admin-login', 'HomeController@getAdminLogin');
+Route::post('admin-login', 'HomeController@postAdminLogin');
+
+Route::group(['prefix' => 'admin', 'middleware' => ['role:admin']], function(){
 
 	Route::get('dashboard', 'ProductSettingsController@settings');
 	Route::get('product/create', 'ProductSettingsController@newProduct');

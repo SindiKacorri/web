@@ -1,4 +1,15 @@
 {
-    "/js/app.js": "/js/app.js?id=d24841044ebd3fd10426",
-    "/css/custom.css": "/css/custom.css?id=1218b827331b7e9bb815"
+    "/front/css/libs.css": "/front/css/libs.css",
+    "/front/css/ltd.css": "/front/css/ltd.css",
+    "/front/js/libs.js": "/front/js/libs.js",
+    "/front/js/jaal.js": "/front/js/jaal.js",
+    "/back/css/login.css": "/back/css/login.css",
+    "/back/css/dashboard.css": "/back/css/dashboard.css",
+    "/back/js/dashboard.js": "/back/js/dashboard.js",
+    "/back/js/dz.js": "/back/js/dz.js",
+    "/back/js/new-product.js": "/back/js/new-product.js",
+    "/back/js/edit-product.js": "/back/js/edit-product.js",
+    "/back/js/dropzone.js": "/back/js/dropzone.js",
+    "/front/app.js": "/front/app.js",
+    "/front/search.js": "/front/search.js"
 }
