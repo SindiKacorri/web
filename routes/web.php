@@ -51,7 +51,6 @@ Route::post('user/update', 'UserController@updateUser')->name('user.update');
 
 Route::get('product/{uuid}',['uses' => 'HomeController@viewProduct', 'as' => 'view.product']);
 Route::get('search', ['uses' => 'HomeController@getSearch', 'as' => 'search']);
-Route::get('our-products', ['uses' => 'HomeController@ourProducts', 'as' => 'our-products']);
 
 Route::get('category/{name}', ['uses' => 'HomeController@viewCategory', 'as' => 'view.category']);
 

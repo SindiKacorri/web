@@ -18,7 +18,7 @@
 							<p>“The reason I sign on these cosmetics is not from a desire for fame. Behind this signature is a message, a personal dialogue with every woman. When I am at the lab carrying out research on a formula, I see a woman before me, as if I am about to create her personal line of cosmetics… ”</p>
 							<h4>I.A.
 								Chemist
-								president of Juliette Armand</h4>
+								</h4>
 							<a href="{{url('/search')}}">Më shumë</a>
 						</div>
 					</div>
@@ -34,8 +34,8 @@
 						<div class="bg-shadow"></div>
 						<div class="welcome-item-content">
 							<h2>PRODUKTET TONA</h2>
-							<p>Juliette Armand sjell një gamë të gjerë produktesh, me mbi 120 kode për përdorim personal. Shikoni më poshtë gjithçka ju ofrojmë për përmbushjen e nevojave tuaja kozmotogjike.</p>
-							<a href="{{ route('our-products') }}">Shiko Produktet</a>
+							<p>LSS sjell një gamë të gjerë produktesh, me mbi 120 kode për përdorim personal. Shikoni më poshtë gjithçka ju ofrojmë për përmbushjen e nevojave tuaja kozmotogjike.</p>
+							<a href="{{ url('search') }}">Shiko Produktet</a>
 						</div>
 					</div>
 				</div>
@@ -57,9 +57,9 @@
         @foreach($categories->chunk(3) as $c)
 		<div class="row mb35">
             @foreach($c as $cat)
-			<div class="col-xs-12 col-sm-5 text-center">
+			<div class="col-xs-12 col-sm-4 text-center">
 				<a href="{{ route('view.category', $cat->name) }}">
-					<div class="category-outer cat-{{$cat->id}}" style="background-image: url('/src/categories/{{$cat->id}}/default.jpg?v=0.2')">
+					<div class="category-outer cat-{{$cat->id}}" style="background-image: url('/src/categories/{{$cat->id}}/default.png?v=0.2')">
 						<div class="button-category-outer">
 							<div class="button-category-inner">
 								{{$cat->name}}
@@ -124,7 +124,7 @@
 							<div class="item-description">
 								<h3 class="title">{{$p->title}}</h3>
 								<h5 class="description">{{isset($p->description) ?: $p->description}}</h5>
-							<div class="price">ALL {{number_format($p->sizes->first()->pivot->price)}}</div>
+							<div class="price">ALL {{$p->sizes->first()->pivot->price}}</div>
 							</div>
 						</a>
 					</div>

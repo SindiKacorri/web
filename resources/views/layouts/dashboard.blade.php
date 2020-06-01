@@ -32,9 +32,9 @@
     <!-- Logo -->
     <a class="logo" href={{url('admin/dashboard')}}>
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>JA</span>
+      <span class="logo-mini"><b>LSS</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">JA</span>
+      <span class="logo-lg">Linje Estetike</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -59,7 +59,7 @@
               <li class="user-header">
                 <img src="{{ asset('back/admin.png') }}" class="img-circle" alt="User Image">
 
-                <p>Juliette Armand</p>
+                <p>LE</p>
               </li>
               <!-- Menu Footer-->
               <li class="user-footer">
@@ -90,7 +90,7 @@
           <img src="{{ asset('back/admin.png') }}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>JA</p>
+          <p>LSS</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -138,7 +138,7 @@
             <li><a href="{{ url('/admin/orders/all') }}"><i class="fa fa-th-list"></i>Lista e Porosive</a></li>
           </ul>
         </li>
-
+  <!--
         <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>

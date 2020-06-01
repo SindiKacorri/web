@@ -24,10 +24,7 @@
 
 	<div class="container">
 		<div class="row" style="margin-top:55px">
-			<div class="hidden-xs col-sm-6">
-				<img src="/src/about-us/about-1.jpg" class="img-responsive about-us-img">
-			</div>
-			<div class="col-xs-12 col-sm-6 flex-vertical">
+			<div class="col-xs-12 flex-vertical">
 				<h2>Një histori e krijimit personal…</h2>
 				<p>Kompania është themeluar në vitin 1992 kur kimistët Michalis Papaefstratiou dhe Ioulia Armagou vendosën të hyjnë në industrinë e bukurisë, të zhvillojnë formula të reja dhe të aplikojnë vlera personale në punën e tyre laboratorike. dhe arritje profesionale…
 						Në vetëm pak vite, kompania arriti një pozicion drejtues midis salloneve të bukurisë dhe nisi eksporte dhe partneritete me institute të njohura botërore të bukurisë.
@@ -42,9 +39,7 @@
 					<h2>VLERAT TONA</h2>
 					<p>Cilësia e shkëlqyeshme e përbërësve, siguria dhe efektiviteti maksimal nuk janë parimet e vetme të laboratorëve tanë. Grupi ynë i shkencëtarëve ka zhvilluar gjithashtu një qëndrim personal shkencor profesional ndaj hulumtimit, kohës dhe diagnozës.</p>
 				</div>
-				<div class="col-xs-12">
-					<img src="/src/about-us/about-2.jpg" class="img-responsive">
-				</div>
+			
 				<div class="col-xs-12 col-sm-4">
 					<div class="about_us_text">
 						<h3>Nuk ka JO, në kërkime.</h3>

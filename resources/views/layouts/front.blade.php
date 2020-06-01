@@ -86,7 +86,7 @@
 					<div class="row mb25">
 						<div class="col-xs-6 col-md-4">
 							<div class="logo-part">
-								<h3 style="margin-bottom:0;">JA</h3>
+								<h3 style="margin-bottom:0;">LSS</h3>
 								{{-- <img src="{{asset('src/img/logo.png')}}" class="w-50 logo-footer" > --}}
 								{{-- <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
 								<p>Use this tool as test data for an automated system or find your next pen</p> --}}
@@ -159,16 +159,6 @@
 		window.orderFinishNotify = true;
 	</script>
 	@endif
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149905200-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-149905200-1');
-	</script>
 
 </body>
 </html>
