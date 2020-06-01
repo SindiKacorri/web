@@ -49,9 +49,18 @@
 				</div>
 				<div class="icons-wrapper">
 					{{-- <span class="user"><i class="far fa-user fa-lg"></i></span> --}}
-					<a href="{{url('orders')}}"><span class="shopping-card" ><i class="fas fa-shopping-bag fa-lg"></i></span>
+
+                    @if (!Auth::check())
+                        <a href="{{ url('/login') }}"><span class="shopping-card" ><i class="fas fa-user fa-lg"></i></span></a>
+                    @else
+                    <a href="{{ url('/user-profile') }}"><span class="shopping-card" >Profili</span></a>
+                    @if(Auth::user()->hasRole('admin'))
+                        <a href="{{ url('/admin/dashboard') }}"><span class="shopping-card">Paneli </span></a>
+                    @endif
+                    @endif
+                    <a href="{{url('orders')}}"><span class="shopping-card" ><i class="fas fa-shopping-bag fa-lg"></i></span>
 						<span id="bag-count"></span>
-					</a>
+                    </a>
 				</div>
 				<div class="clearfix"></div>
 			</div>

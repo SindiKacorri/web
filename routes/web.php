@@ -59,9 +59,7 @@ Route::post('order', 'HomeController@saveOrder');
 
 Route::get('checkout', 'HomeController@checkout');
 
-
-Route::get('admin-login', 'HomeController@getAdminLogin');
-Route::post('admin-login', 'HomeController@postAdminLogin');
+Route::get('user-profile', 'HomeController@viewUserProfile');
 
 Route::group(['prefix' => 'admin', 'middleware' => ['role:admin']], function(){
 

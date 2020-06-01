@@ -166,10 +166,18 @@ class HomeController extends Controller
 			return back()->withInput()->withErrors($validator);
 		}
 
-		// STEP 1: if user exists, update current location
-		$user = User::where('email', $request->get('email'))->first();
+        // STEP 1: if user exists, update current location
+        if(Auth::check()) {
+            $user = Auth::user();
+        } else {
+            $user = User::where('email', $request->get('email'))->first();
+        }
 		if($user){
-			$location = UserLocation::where('user_id', $user->id)->first();
+            $location = UserLocation::where('user_id', $user->id)->first();
+            if($location == null) {
+                $location = new UserLocation;
+                $location->user_id = $user->id;
+            }
 			$location->country = $request->get('country');
 			$location->city = $request->get('city');
 			$location->address = $request->get('address');
@@ -236,35 +244,13 @@ class HomeController extends Controller
 		}
 
 		return redirect('/checkout')->with('order-success', 'Porosia u krye me sukses! Do ju njoftojmë së shpejti.');
-	}
-	/**
-	* Show admin login page.
-	*
-	* @param
-	* @return Response
-	*/
-	public function getAdminLogin()
-	{
-		if(Auth::guard()->check()){
-			return redirect($this->redirectTo);
-		};
-		return view('back.login');
-	}
+    }
 
-	/**
-	* Responds to requests to /admin/login.
-	*
-	* @param  array  $request
-	* @return Response
-	*/
-	public function postAdminLogin(Request $request)
-	{
-		$credentials = $request->only('email','password');
-		if (Auth::guard()->attempt($credentials)) {
-			return redirect()->intended('admin/dashboard');
-		}
-		return back()
-		->withInput($request->except('password'))
-		->withErrors(['password' => 'Password is incorrect']);
-	}
+    public function viewUserProfile(){
+        if(!Auth::check()) {
+            return redirect('/');
+        }
+
+        return view('user-profile');
+    }
 }
